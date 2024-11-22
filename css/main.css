@@ -1,0 +1,233 @@
+/* ------------------------ */
+/*         GENERAL          */
+/* ------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Golden-Veil: hsl(30, 54%, 90%);
+    --Deep-Taupe: hsl(30, 10%, 34%);
+    --Dark-Oak: hsl(24, 5%, 18%);
+    
+    --Autumn-Bark: hsl(14, 45%, 36%);
+    
+    --Velvet-Wine: hsl(332, 51%, 32%);
+    --Delicate-Bloom: hsl(330, 100%, 98%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: var(--Golden-Veil);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--Deep-Taupe);
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--Golden-Veil);
+    margin: 25px 0;
+}
+
+/* ------------------------ */
+/*          RECIPE          */
+/* ------------------------ */
+
+.recipe {
+    background-color: var(--White);
+    margin-top: 150px;
+    padding: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 15px;
+    max-width: 670px;
+
+}
+
+.recipe__one {
+    padding-bottom: 30px;
+}
+.recipe__image {
+    padding-bottom: 30px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.recipe__main-title {
+    color: var(--Dark-Oak);
+    font-size: 34px;
+    padding-bottom: 15px;
+}
+.recipe__main-subtitle {
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+/* ------------------------ */
+/*        PREPARATION       */
+/* ------------------------ */
+
+.preparation{
+    background-color: var(--Delicate-Bloom);
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+}
+
+.preparation__title {
+    color: var(--Velvet-Wine);
+    font-size: 21px;
+    padding-bottom: 10px;
+}
+
+.preparation__subtitle > span {
+    color: var(--Dark-Oak);
+    font-weight: 900;
+    padding-right: 7px;
+}
+
+.preparation__subtitle {
+    position: relative;
+    opacity: 0.8;
+    padding-left: 35px;
+    padding-bottom: 10px;
+}
+
+/* ------------------------ */
+/*        Ingredients       */
+/* ------------------------ */
+
+.ingredients__title{
+    color: var(--Autumn-Bark);
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+
+.ingredients_subtitle {
+    position: relative;
+    padding-bottom: 10px;
+    padding-left: 35px;
+    opacity: 0.8;
+}
+
+/* ------------------------ */
+/*       Instructions       */
+/* ------------------------ */
+
+.instructions__title, .nutrition__title{
+    color: var(--Autumn-Bark);
+    padding-bottom: 20px;
+}
+
+.instruction-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: instruction-counter;
+}
+
+.instruction-list li {
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 32px;
+    opacity: 0.8;
+}
+
+.instruction-list li::before {
+    counter-increment: instruction-counter;
+    content: counter(instruction-counter) ".";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--Autumn-Bark);
+}
+
+.instruction-list li strong {
+    color: hsl(0, 0%, 12%);
+}
+
+/* ------------------------ */
+/*         Nutrition        */
+/* ------------------------ */
+
+.nutrition__subtitle {
+    margin: 16px 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+.nutrition-table td {
+    padding: 8px 12px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.nutrition-table td.value {
+    text-align: right;
+    font-weight: bold;
+    color: var(--Autumn-Bark); 
+}
+
+.nutrition-table tr:not(:last-child) {
+    border-bottom: 1px solid hsl(0, 0%, 90%); 
+}
+
+/* ------------------------ */
+/*         FOOTER           */
+/* ------------------------ */
+
+footer {
+    padding-top: 40px;
+}
+
+/* ------------------------ */
+/*         BEFORE           */
+/* ------------------------ */
+.ingredients_subtitle::before {
+    color: var(--Autumn-Bark);
+}
+.preparation__subtitle::before, .ingredients_subtitle::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    color: var(--Velvet-Wine);
+    font-size: 18px; 
+}
+
+/* ------------------------ */
+/*     RESPONSIVE WEBSITE   */
+/* ------------------------ */
+
+@media (max-width: 425px) {
+    .social {
+        max-width: 330px;
+        margin: 0 10px;
+    }
+}
