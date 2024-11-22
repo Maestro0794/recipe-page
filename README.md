@@ -13,7 +13,6 @@ This is my solution for the [Recipe Page Challenge](https://www.frontendmentor.i
 - [Features](#features)
 - [What I Learned](#what-i-learned)
 - [Continued Development](#continued-development)
-- [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -23,7 +22,7 @@ This is my solution for the [Recipe Page Challenge](https://www.frontendmentor.i
 ![Recipe Page Screenshot](./design/desktop-design.jpg)
 
 ### Links
-- [Live Demo]()
+- [Live Demo](https://maestro0794.github.io/recipe-page/)
 - [Frontend Mentor Challenge](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm)
 
 ---
@@ -67,11 +66,8 @@ This is my solution for the [Recipe Page Challenge](https://www.frontendmentor.i
 
 ---
 
----
 
----
-
-##Author
+## Author
 
 - Frontend Mentor Profile: Maestro0794
 - GitHub: Maestro0794
@@ -81,12 +77,6 @@ This is my solution for the [Recipe Page Challenge](https://www.frontendmentor.i
 ## Acknowledgements
 
 Thanks to [Frontend Mentor](https://www.frontendmentor.io) for providing this challenge and design inspiration.
-
----
-
-## Live Preview
-
-Check out the live version of the project here: [Live Demo]()
 
 ---
 
